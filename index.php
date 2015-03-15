@@ -189,36 +189,8 @@ function update_options_form()
 				 <div id="setting"><h2>Shortcode</h2></div>
                  <div id="wrapper" class="shortcode" >
 				 
-				 <pre>[twitter]</pre>
-				 <table class="table" width="100%">
-  					<thead>
-  						<tr>
-  							<th align="left"><?php _e('Parametro',"twitter-base"); ?></th>
-  							<th align="left"><?php _e('Descrizione',"twitter-base"); ?></th>
-  							<th align="left"><?php _e('Valore',"twitter-base"); ?></th>
-  						</tr>
-  					</thead>
-  					<tbody>
-  						<tr>
-  							<td valign="top"><?php _e('username',"twitter-base"); ?></td>
-  							<td valign="top"><em><?php _e('username twitter, senza @',"twitter-base"); ?></em></td>
-  							<td valign="top"><?php _e('configurazione',"twitter-base"); ?></td>
-  						</tr>
-  						<tr>
-  							<td valign="top"><?php _e('num',"twitter-base"); ?></td>
-  							<td valign="top"><em><?php _e('numero di twitter da visualizzare',"twitter-base"); ?></em></td>
-  							<td valign="top">0</td>
-  						</tr>
-  						
-  						
-  					</tbody>
-				</table>
-				<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-				<div class="example">[twitter username = "USERNAME TWITTER" num="2"]</div>
-				
-				
-				
-				<pre>[twitter_user]</pre>
+				 			
+				<pre>[twitter]</pre>
 				 <table class="table" width="100%">
   					<thead>
   						<tr>
@@ -241,7 +213,7 @@ function update_options_form()
 				
 				
 				<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-				<div class="example">[twitter_user num="2"]</div>
+				<div class="example">[twitter num="2"]</div>
 				
 		
 	</div>
