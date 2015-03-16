@@ -1,7 +1,7 @@
 === Twitter Base ===
 Contributors: simone marchese
 Tags: widget, shortcode, twitter, twitter widget, po, mo, plugin
-Requires at least: 0.3
+Requires at least: 4.0
 Version: 0.1.0
 Tested up to: 4.1.1
 Stable tag: 0.1.0
