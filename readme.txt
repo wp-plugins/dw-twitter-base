@@ -65,7 +65,7 @@ access_token_secret : Access Token Secret
 * Feature: First version of the plugin and initial functions.
 * Feature: Add Widget Plugin
 * Feature: Add Shorcode Plugin
-
+* Translations for Italy, English.
 
 
 
