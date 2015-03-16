@@ -2,9 +2,9 @@
 Contributors: simone marchese
 Tags: widget, shortcode, twitter, twitter widget, po, mo, plugin
 Requires at least: 4.0
-Version: 0.1.0
+Version: 1.1
 Tested up to: 4.1.1
-Stable tag: 0.1.0
+Stable tag: 1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Donate Link: https://www.paypal.com/it/cgi-bin/webscr?cmd=_flow&SESSION=FfdyoCSIyDh8HJtsvOst0okG1XEEatdcLG9qDVsuAdbwD1cV557LRBKu98u&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c
@@ -61,7 +61,7 @@ access_token_secret : Access Token Secret
 3. Use shortcode in page and post 
 == Changelog ==
 
-= 0.1.0 =
+= 1.1 =
 * Feature: First version of the plugin and initial functions.
 * Feature: Add Widget Plugin
 * Feature: Add Shorcode Plugin
@@ -71,5 +71,5 @@ access_token_secret : Access Token Secret
 
 == Upgrade Notice ==
 
-= 0.1.0 =
+= 1.1 =
 This is the first release of the plug-in
