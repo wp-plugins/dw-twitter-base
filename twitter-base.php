@@ -82,6 +82,11 @@ function moduleStyle() {
 }
 add_action( 'admin_enqueue_scripts', 'moduleStyle' );
 
+function modulePublicStyle() {
+	wp_register_style('stylesheet-css', PLUGIN_TWITTER_BASE_CSS . 'public.css');
+	wp_enqueue_style('stylesheet-css');	
+}
+add_action( 'wp_enqueue_scripts', 'modulePublicStyle' );
 
 
 function add_option_page(){
