@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DW Twitter Base v0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-03-13 00:35:26+0000\n"
+"Last-Translator: admin <simo.marchese@hotmail.it>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#. translators: plugin header field 'Name'
+#: index.php:0
+#@ twitter-base
+msgid "DW Twitter Base"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#. translators: plugin header field 'AuthorURI'
+#: index.php:0
+#@ twitter-base
+msgid "http://www.decadeweb.it"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: index.php:0
+#@ twitter-base
+msgid "Twitter Base è un plugin che crea una completa integrazione tra il vostro blog WordPress e il vostro account Twitter."
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: index.php:0
+#@ twitter-base
+msgid "Simone Marchese"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: index.php:0
+#@ twitter-base
+msgid "0.3"
+msgstr ""
+
+#: index.php:183
+#@ default
+msgid "Save Changes"
+msgstr ""
+
+#: index.php:196
+#@ twitter-base
+msgid "Parametro"
+msgstr ""
+
+#: index.php:197
+#@ twitter-base
+msgid "Descrizione"
+msgstr ""
+
+#: index.php:198
+#@ twitter-base
+msgid "Valore"
+msgstr ""
+
+#: index.php:151
+#@ twitter-base
+msgid "Impostazioni"
+msgstr ""
+
+#: index.php:160
+#@ twitter-base
+msgid "Twitter Username"
+msgstr ""
+
+#: index.php:164
+#@ twitter-base
+msgid "Consumer Key"
+msgstr ""
+
+#: index.php:168
+#@ twitter-base
+msgid "Consumer Secret"
+msgstr ""
+
+#: index.php:175
+#@ twitter-base
+msgid "Access Token"
+msgstr ""
+
+#: index.php:179
+#@ twitter-base
+msgid "Access Token Secret"
+msgstr ""
+
+#: index.php:122
+#@ twitter-base
+msgid ""
+"<p>Questo plugin è stato scritto basandosi sulla versione 1.1 di Twitter OAuth API.<br />\n"
+"\t\t\t\t\t\t\tCollegati all'indirizzo <a href='https://dev.twitter.com/apps' target='_blank'>https://dev.twitter.com/apps</a> e crea la propria applicazione, il sistema vi fornirà dei parametri univoci da utilizzare nel modulo sottostante.</p>"
+msgstr ""
+
+#: index.php:142
+#@ twitter-base
+msgid "Configurazione di Twitter Base"
+msgstr ""
+
+#: index.php:144
+#@ twitter-base
+msgid ""
+"<p>Questo plugin è stato scritto basandosi sulla versione 1.1 di Twitter OAuth API.<br />\n"
+"\t\t\t\t\t Collegati all'indirizzo <a href='https://dev.twitter.com/apps' target='_blank'>https://dev.twitter.com/apps</a> e crea la propria applicazione, il sistema vi fornirà dei parametri univoci da utilizzare nel modulo sottostante.</p>"
+msgstr ""
+
+#: index.php:203
+#@ twitter-base
+msgid "username"
+msgstr ""
+
+#: index.php:204
+#@ twitter-base
+msgid "username twitter, senza @"
+msgstr ""
+
+#: index.php:205
+#@ twitter-base
+msgid "configurazione"
+msgstr ""
+
+#: index.php:208
+#@ twitter-base
+msgid "num"
+msgstr ""
+
+#: index.php:209
+#@ twitter-base
+msgid "numero di twitter da visualizzare"
+msgstr ""
+
+#: index.php:216
+#@ twitter-base
+msgid "Esempio:"
+msgstr ""
+
