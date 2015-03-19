@@ -76,15 +76,13 @@ function register_options_group()
 add_action ('admin_init', 'register_options_group');
 
 
-function register_css() {
+function moduleStyle() {
 	wp_register_style('stylesheet-css', PLUGIN_TWITTER_BASE_CSS . 'stylesheet.css');
 	wp_enqueue_style('stylesheet-css');
-	
-	wp_register_script('function-js', PLUGIN_TWITTER_BASE_JS . 'function.js');
-	wp_enqueue_script('function-js');
+
 	
 }
-add_action( 'admin_enqueue_scripts', 'register_css' );
+add_action( 'admin_enqueue_scripts', 'moduleStyle' );
 
 
 
