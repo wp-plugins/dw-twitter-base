@@ -84,7 +84,7 @@ function add_option_page(){
    $twb_hook = add_options_page('Twitter Base', 'Twitter Base', 'manage_options', 'my-unique-identifier', 'update_options_form');
 	
    # register CSS Plugin
-   add_action( 'admin_head-'. $twb_hook, 'register_css' );
+   add_action( 'admin_head-'. $twb_hook, 'moduleStyle' );
 }
  
 add_action('admin_menu', 'add_option_page');
