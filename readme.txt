@@ -20,9 +20,17 @@ I created twitter base to allow the integration of Twitter with wordpress. Here 
 - Indicate the number of twitter to render
 - Use the shortcode to display the twitter posts and pages in your site
 
-= Widgets =
+** Twitter Base Widgets: ** Displays the list of twitter by configuration set
 
-- "Twitter Base" - Displays the list of twitter by configuration set
+** Twitter Base Shortcode: ** The shortcode made ??available to allow the insertion of components twitter based in a post or a page in wordpress . 
+Each shortcode has parameters of customization that can be specified in the code itself. 
+
+
+*[twitter num=""]
+*
+
+*[twitter_card tweet=""]
+*
 
 
 == Installation ==
