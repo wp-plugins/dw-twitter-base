@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) die("Accesso diretto al file non permesso");
 */             
    
 define('TWITTER_BASE_PATH', dirname(__FILE__).'/' ); // Patch used for include
-define('TWITTER_BASE_URL', plugin_dir_url(__FILE__).'/' ); // Patch user for load file
+define('TWITTER_BASE_URL', plugin_dir_url(__FILE__)); // Patch user for load file
 
 define('PLUGIN_TWITTER_BASE_CSS', TWITTER_BASE_URL . 'css/');
 define('PLUGIN_TWITTER_BASE_JS', TWITTER_BASE_URL . 'js/');
@@ -76,15 +76,11 @@ function register_options_group()
 add_action ('admin_init', 'register_options_group');
 
 
-function register_css() {
+function moduleStyle() {
 	wp_register_style('stylesheet-css', PLUGIN_TWITTER_BASE_CSS . 'stylesheet.css');
-	wp_enqueue_style('stylesheet-css');
-	
-	wp_register_script('function-js', PLUGIN_TWITTER_BASE_JS . 'function.js');
-	wp_enqueue_script('function-js');
-	
+	wp_enqueue_style('stylesheet-css');	
 }
-add_action( 'admin_enqueue_scripts', 'register_css' );
+add_action( 'admin_enqueue_scripts', 'moduleStyle' );
 
 
 
