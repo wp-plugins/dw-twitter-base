@@ -261,7 +261,7 @@ function update_options_form()
 						
 						
 						<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-						<div class="example">[twitter_cart tweet="lorem ipsum"]</div>
+						<div class="example">[twitter_card tweet="lorem ipsum"]</div>
 				
 					</div><!--end .accordion-section-content-->
 				</div><!--end .accordion-section-->
