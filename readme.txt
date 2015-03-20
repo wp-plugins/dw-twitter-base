@@ -26,9 +26,9 @@ I created twitter base to allow the integration of Twitter with wordpress. Here 
 Each shortcode has parameters of customization that can be specified in the code itself. 
 
 
-- [twitter num=""]
+-[twitter num=""]
 
-- [twitter_card tweet=""]
+-[twitter_card tweet=""]
 
 
 
