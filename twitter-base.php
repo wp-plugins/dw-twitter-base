@@ -76,18 +76,31 @@ function register_options_group()
 add_action ('admin_init', 'register_options_group');
 
 
-function moduleStyle() {
+function moduleAdminLoad() {
+	# Add CSS Admin Setting
 	wp_register_style('stylesheet-css', PLUGIN_TWITTER_BASE_CSS . 'stylesheet.css');
-	wp_enqueue_style('stylesheet-css');	
+	wp_enqueue_style('stylesheet-css');
+	
 }
-add_action( 'admin_enqueue_scripts', 'moduleStyle' );
+add_action( 'admin_enqueue_scripts', 'moduleAdminLoad' );
 
+# Add CSS For Shortcode Public
 function modulePublicStyle() {
 	wp_register_style('stylesheet-css', PLUGIN_TWITTER_BASE_CSS . 'public.css');
 	wp_enqueue_style('stylesheet-css');	
+	
+	
 }
 add_action( 'wp_enqueue_scripts', 'modulePublicStyle' );
 
+function moduleAdminScript(){
+	if(is_admin()){
+        wp_enqueue_script('custom-script-js', PLUGIN_TWITTER_BASE_JS . 'custom-script.js', array('jquery'));
+    }
+}
+
+
+add_action('admin_enqueue_scripts', 'moduleAdminScript');
 
 function add_option_page(){
    global $twb_hook;
@@ -95,9 +108,9 @@ function add_option_page(){
    $twb_hook = add_options_page('Twitter Base', 'Twitter Base', 'manage_options', 'my-unique-identifier', 'update_options_form');
 	
    # register CSS Plugin
-   add_action( 'admin_head-'. $twb_hook, 'moduleStyle' );
+   add_action( 'admin_head-'. $twb_hook, 'moduleAdminLoad' );
+  
 }
- 
 add_action('admin_menu', 'add_option_page');
 
 # Help Admin - For plugin Twitter Base
@@ -153,110 +166,113 @@ function update_options_form()
 	    	
 	    	
 	    	
-	    	<br /><br />
-            	<div id="setting" class="imp">           		
-                    <h2><img src="<?php echo PLUGIN_TWITTER_BASE_IMG; ?>gear.png" border="0" align="left" /> <?php _e("Impostazioni","twitter-base"); ?></h2>
-                 </div>
-	    	    <div id="wrapper" class="config" status="active">
-						        
-					<form method="post" action="options.php">
-	    			<?php settings_fields('dw_options_group'); ?>
-					
-					<div class="row">
-						<div class="col-md-4">
-							<label for="dw_twitteruser"><?php _e("Twitter Username","twitter-base"); ?></label>
-							<input placeholder="@" type="text" id="dw_twitteruser" class="form-control" value="<?php echo get_option('dw_twitteruser'); ?>" name="dw_twitteruser" />
+	    	<div class="accordion">
+				<div class="accordion-section">
+					<a class="accordion-section-title active" href="#accordion-1">
+						<?php _e("Impostazioni","twitter-base"); ?>
+					</a>
+					 
+					<div id="accordion-1" class="accordion-section-content open" style="display: block">
+						<form method="post" action="options.php">
+						<?php settings_fields('dw_options_group'); ?>
+						
+						<div class="row">
+							<div class="col-md-4">
+								<label for="dw_twitteruser"><?php _e("Twitter Username","twitter-base"); ?></label>
+								<input placeholder="@" type="text" id="dw_twitteruser" class="form-control" value="<?php echo get_option('dw_twitteruser'); ?>" name="dw_twitteruser" />
+							</div>
+							<div class="col-md-4">
+								<label for="dw_consumerkey"><?php _e("Consumer Key","twitter-base"); ?></label>
+								<input type="text" id="dw_consumerkey" class="form-control" value="<?php echo get_option('dw_consumerkey'); ?>" name="dw_consumerkey" />
+							</div>
+							<div class="col-md-4">
+								<label for="dw_consumersecret"><?php _e("Consumer Secret","twitter-base"); ?></label>
+								<input type="text" id="dw_consumersecret" class="form-control" value="<?php echo get_option('dw_consumersecret'); ?>" name="dw_consumersecret" />
+							</div>
 						</div>
-						<div class="col-md-4">
-							<label for="dw_consumerkey"><?php _e("Consumer Key","twitter-base"); ?></label>
-							<input type="text" id="dw_consumerkey" class="form-control" value="<?php echo get_option('dw_consumerkey'); ?>" name="dw_consumerkey" />
+						<div class="clearfix">&nbsp;</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="dw_accesstoken"><?php _e("Access Token","twitter-base"); ?></label>
+								<input type="text" id="dw_accesstoken" class="form-control" value="<?php echo get_option('dw_accesstoken'); ?>" name="dw_accesstoken" />
+							</div>
+							<div class="col-md-4">
+								<label for="dw_accesstokensecret"><?php _e("Access Token Secret","twitter-base"); ?></label>
+								<input type="text" id="dw_accesstokensecret" class="form-control" value="<?php echo get_option('dw_accesstokensecret'); ?>" name="dw_accesstokensecret" />
+							</div>
+							<div class="col-md-4 text-right">
+								<input type="submit" class="button-primary" id="submit" name="submit" value="<?php _e('Save Changes') ?>" />
+							</div>
 						</div>
-						<div class="col-md-4">
-							<label for="dw_consumersecret"><?php _e("Consumer Secret","twitter-base"); ?></label>
-							<input type="text" id="dw_consumersecret" class="form-control" value="<?php echo get_option('dw_consumersecret'); ?>" name="dw_consumersecret" />
-						</div>
-					</div>
-					<div class="clearfix">&nbsp;</div>
-					<div class="row">
-						<div class="col-md-4">
-							<label for="dw_accesstoken"><?php _e("Access Token","twitter-base"); ?></label>
-							<input type="text" id="dw_accesstoken" class="form-control" value="<?php echo get_option('dw_accesstoken'); ?>" name="dw_accesstoken" />
-						</div>
-						<div class="col-md-4">
-							<label for="dw_accesstokensecret"><?php _e("Access Token Secret","twitter-base"); ?></label>
-							<input type="text" id="dw_accesstokensecret" class="form-control" value="<?php echo get_option('dw_accesstokensecret'); ?>" name="dw_accesstokensecret" />
-						</div>
-						<div class="col-md-4 text-right">
-							<input type="submit" class="button-primary" id="submit" name="submit" value="<?php _e('Save Changes') ?>" />
-						</div>
-					</div>
-					</form>
+						</form>
+					</div><!--end .accordion-section-content-->
+				</div><!--end .accordion-section-->
+				<!-- END IMPOSTAZIONI -->
+				
+				<div class="accordion-section">
+					<a class="accordion-section-title" href="#accordion-2">Shortcode</a>
+					 
+					<div id="accordion-2" class="accordion-section-content">
+						 <pre>[twitter]</pre>
+						 <table class="table" width="100%">
+							<thead>
+								<tr>
+									<th align="left" width="20%"><?php _e('Parametro',"twitter-base"); ?></th>
+									<th align="left" width="60%"><?php _e('Descrizione',"twitter-base"); ?></th>
+									<th align="left" width="20%"><?php _e('Valore',"twitter-base"); ?></th>
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td valign="top"><?php _e('num',"twitter-base"); ?></td>
+									<td valign="top"><em><?php _e('numero di twitter da visualizzare',"twitter-base"); ?></em></td>
+									<td valign="top">0</td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+						
+						
+						<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
+						<div class="example">[twitter num="2"]</div>
+						
+						<pre>[twitter_card]</pre>
+						 <table class="table" width="100%">
+							<thead>
+								<tr>
+									<th align="left" width="20%"><?php _e('Parametro',"twitter-base"); ?></th>
+									<th align="left" width="60%"><?php _e('Descrizione',"twitter-base"); ?></th>
+									<th align="left" width="20%"><?php _e('Valore',"twitter-base"); ?></th>
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td valign="top"><?php _e('tweet',"twitter-base"); ?></td>
+									<td valign="top"><em><?php _e('contenuto del tweet',"twitter-base"); ?></em></td>
+									<td valign="top"></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+						
+						
+						<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
+						<div class="example">[twitter_cart tweet="lorem ipsum"]</div>
+				
+					</div><!--end .accordion-section-content-->
+				</div><!--end .accordion-section-->
+			</div><!--end .accordion-->
 			
-						</div><!-- end wrapper -->
-				 <div id="setting"><h2>Shortcode</h2></div>
-                 <div id="wrapper" class="shortcode" >
-				 
-				 			
-				<pre>[twitter]</pre>
-				 <table class="table" width="100%">
-  					<thead>
-  						<tr>
-  							<th align="left" width="20%"><?php _e('Parametro',"twitter-base"); ?></th>
-  							<th align="left" width="60%"><?php _e('Descrizione',"twitter-base"); ?></th>
-  							<th align="left" width="20%"><?php _e('Valore',"twitter-base"); ?></th>
-  						</tr>
-  					</thead>
-  					<tbody>
-  						
-  						<tr>
-  							<td valign="top"><?php _e('num',"twitter-base"); ?></td>
-  							<td valign="top"><em><?php _e('numero di twitter da visualizzare',"twitter-base"); ?></em></td>
-  							<td valign="top">0</td>
-  						</tr>
-  						
-  						
-  					</tbody>
-				</table>
-				
-				
-				<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-				<div class="example">[twitter num="2"]</div>
-				
-				<pre>[twitter_card]</pre>
-				 <table class="table" width="100%">
-  					<thead>
-  						<tr>
-  							<th align="left" width="20%"><?php _e('Parametro',"twitter-base"); ?></th>
-  							<th align="left" width="60%"><?php _e('Descrizione',"twitter-base"); ?></th>
-  							<th align="left" width="20%"><?php _e('Valore',"twitter-base"); ?></th>
-  						</tr>
-  					</thead>
-  					<tbody>
-  						
-  						<tr>
-  							<td valign="top"><?php _e('tweet',"twitter-base"); ?></td>
-  							<td valign="top"><em><?php _e('contenuto del tweet',"twitter-base"); ?></em></td>
-  							<td valign="top"></td>
-  						</tr>
-  						
-  						
-  					</tbody>
-				</table>
-				
-				
-				<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-				<div class="example">[twitter_cart tweet="lorem ipsum"]</div>
-		
-		
-	</div>
+			
+            	
+	</div> <!-- end Wrap -->			 
     <br />
 	<div class="credits">Power <a href="http://decadeweb.it" target="_blank">Decadeweb</a> &bullet; Twitter Base versione 1.1.1</div>
     
 	<?php
 }
-
-
-
-
-
 ?>
