@@ -3,7 +3,7 @@ Contributors: simone marchese
 Tags: widget, shortcode, twitter, twitter widget, po, mo, plugin
 Requires at least: 4.0
 Version: 1.1.1
-Tested up to: 4.1.1
+Tested up to: 4.1.2
 Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -25,10 +25,8 @@ I created twitter base to allow the integration of Twitter with wordpress. Here 
 **Twitter Base Shortcode:** The shortcode made available to allow the insertion of components twitter based in a post or a page in wordpress . 
 Each shortcode has parameters of customization that can be specified in the code itself. 
 
-
--[twitter num=""]
-
--[twitter_card tweet=""]
+- [twitter num=""]
+- [twitter_card tweet=""]
 
 
 
