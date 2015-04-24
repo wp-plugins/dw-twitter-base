@@ -18,7 +18,11 @@
 		
 	}
 	
-	#wrapper label{ color: #333333; }
+	#wrapper label{ 
+		color: #333333; 
+		font-weight: bold;
+		display: block;
+	}
 	
 	.row{width: 95%;display: block;}
 	.col-md-4{
@@ -26,10 +30,7 @@
 		float: left;
 		display: inline-block;
 	}
-	label{
-		font-weight: bold;
-		display: block;
-	}
+	
 	.form-control{
 		width: 80%;
 		border-radius: 4px;
@@ -48,7 +49,7 @@
 	clear: both;
 	height: 10px;
 }
-.example{
+.twb-example{
 	background: rgb(191,210,224); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(191,210,224,1) 0%, rgba(155,183,204,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(191,210,224,1)), color-stop(100%,rgba(155,183,204,1))); /* Chrome,Safari4+ */
