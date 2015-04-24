@@ -236,7 +236,7 @@ function update_options_form()
 						
 						
 						<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-						<div class="example">[twitter num="2"]</div>
+						<div class="twb-example">[twitter num="2"]</div>
 						
 						<pre>[twitter_card]</pre>
 						 <table class="table" width="100%">
@@ -261,7 +261,7 @@ function update_options_form()
 						
 						
 						<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-						<div class="example">[twitter_card tweet="lorem ipsum"]</div>
+						<div class="twb-example">[twitter_card tweet="lorem ipsum"]</div>
 				
 					</div><!--end .accordion-section-content-->
 				</div><!--end .accordion-section-->
