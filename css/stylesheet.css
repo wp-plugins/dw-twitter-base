@@ -42,13 +42,7 @@
 	.text-right{text-align: right;}
 	#submit{margin: 15px 63px 0px 0px;}
 	
-.clearfix {
-	visibility: hidden;
-	display: block;
-	content: " ";
-	clear: both;
-	height: 10px;
-}
+
 .twb-example{
 	background: rgb(191,210,224); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(191,210,224,1) 0%, rgba(155,183,204,1) 100%); /* FF3.6+ */
