@@ -30,7 +30,7 @@ Each shortcode has parameters of customization that can be specified in the code
 - [dw-twitter-card tweet = ""]
 
 
-** Twitter Base:** Compatible with ShortCake
+**Twitter Base:** Compatible with ShortCake
 
 
 == Installation ==
