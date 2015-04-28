@@ -3,7 +3,7 @@
  * Plugin Name: DW Twitter Base
  * Plugin URI: http://decadeweb.it/italian/twitter-base.php
  * Description: Twitter Base è un plugin che crea una completa integrazione tra il vostro blog WordPress e il vostro account Twitter.
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: Simone Marchese
  * Author URI: http://www.decadeweb.it
  * Text Domain: twitter-base
