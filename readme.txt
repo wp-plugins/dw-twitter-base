@@ -22,6 +22,8 @@ I created twitter base to allow the integration of Twitter with wordpress. Here 
 
 **Twitter Base Widgets:** Displays the list of twitter by configuration set
 
+**Twitter Base:** Compatible with ShortCake
+
 **Twitter Base Shortcode:** The shortcode made available to allow the insertion of components twitter based in a post or a page in wordpress . 
 Each shortcode has parameters of customization that can be specified in the code itself. 
 
@@ -30,7 +32,7 @@ Each shortcode has parameters of customization that can be specified in the code
 - [dw-twitter-card tweet = ""]
 
 
-**Twitter Base:** Compatible with ShortCake
+
 
 
 == Installation ==
