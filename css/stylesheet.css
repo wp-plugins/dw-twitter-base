@@ -21,7 +21,7 @@
 	#wrapper label{ 
 		color: #333333; 
 		font-weight: bold;
-		display: block; 
+		display: block;
 	}
 	
 	.row{width: 95%;display: block;}
@@ -41,32 +41,21 @@
 	}
 	.text-right{text-align: right;}
 	#submit{margin: 15px 63px 0px 0px;}
-	
 
 .twb-example{
-	background: rgb(191,210,224); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(191,210,224,1) 0%, rgba(155,183,204,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(191,210,224,1)), color-stop(100%,rgba(155,183,204,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(191,210,224,1) 0%,rgba(155,183,204,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(191,210,224,1) 0%,rgba(155,183,204,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(191,210,224,1) 0%,rgba(155,183,204,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom, rgba(191,210,224,1) 0%,rgba(155,183,204,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd2e0', endColorstr='#9bb7cc',GradientType=0 ); /* IE6-9 */
-	color: #FFF;
-	padding: 8px 10px;
-	font-size: 14px;
+	color: #383838;
+	padding: 8px 0px;
+	font-size: 13px;
 	margin-bottom: 20px;
 }
 	.exampleHeader{
 		height: 30px;
-		background: #ecedf1;
 		border-bottom: solid 1px #f8f8fa;
 		color: #9da8bc;
-		padding: 8px 10px;
+		padding: 8px 0px;
 		text-transform: uppercase;
 		font-weight: bold;
-		border-left: solid 1px #d4d7e0;
-		border-right: solid 1px #d4d7e0;
+		
 	}
 	
 		.credits{
@@ -76,7 +65,7 @@
 		color: #000;
 		font-family: Arial;
 	}
-/*----- Accordion -----*/
+
 .accordion, .accordion * {
     -webkit-box-sizing:border-box; 
     -moz-box-sizing:border-box; 
@@ -88,10 +77,10 @@
     margin-top: 15px;
 }
 
-/*----- Section Titles -----*/
+
 .accordion-section-title {
     transition:all linear 0.15s;
-    /* Type */
+
     font-size: 22px;
     
 	width: 100%;
@@ -107,7 +96,7 @@
 .accordion-section-title  img{ margin-right: 15px; }
 .accordion-section-title.active, .accordion-section-title:hover {
     background: #ebefef;
-    /* Type */
+
     text-decoration:none;
 }
  
@@ -115,7 +104,7 @@
     border-bottom:none;
 }
  
-/*----- Section Content -----*/
+
 .accordion-section-content {
     padding:15px;
     display:none;

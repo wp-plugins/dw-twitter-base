@@ -2,9 +2,9 @@
 Contributors: simone marchese
 Tags: widget, shortcode, twitter, twitter widget, po, mo, plugin
 Requires at least: 4.0
-Version: 1.1.1
+Version: 1.1.2
 Tested up to: 4.1.2
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Donate Link: https://www.paypal.com/it/cgi-bin/webscr?cmd=_flow&SESSION=FfdyoCSIyDh8HJtsvOst0okG1XEEatdcLG9qDVsuAdbwD1cV557LRBKu98u&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c
@@ -25,9 +25,12 @@ I created twitter base to allow the integration of Twitter with wordpress. Here 
 **Twitter Base Shortcode:** The shortcode made available to allow the insertion of components twitter based in a post or a page in wordpress . 
 Each shortcode has parameters of customization that can be specified in the code itself. 
 
-- [twitter num=""]
-- [twitter_card tweet=""]
+- [dw-twitter-stream num = ""]
 
+- [dw-twitter-card tweet = ""]
+
+
+** Twitter Base:** Compatible with ShortCake
 
 
 == Installation ==
@@ -63,11 +66,16 @@ access_token_secret : Access Token Secret
 
 2. Widget plugin.
 
-3. Output Shortcode [twitter num=""]
+3. Output Shortcode [dw-twitter-stream num = ""]
 
-4. Output Shortcode [twitter_card tweet="Usa Twitter Base per moltiplicare le condivisioni dei tuoi tweet"]
+4. Output Shortcode [dw-twitter-card tweet="Usa Twitter Base per moltiplicare le condivisioni dei tuoi tweet"]
 
 == Changelog ==
+
+= 1.1.2 =
+* Fix: Rename Shorcode Plugin [dw-twitter-stream num = ""]
+* Fix: Rename Shorcode Plugin [dw-twitter-card tweet = ""]
+* Feature: Compatible with ShortCake
 
 = 1.1.1 =
 * Feature: Add Shorcode Plugin [twitter_card tweet=""]

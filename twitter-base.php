@@ -88,8 +88,7 @@ add_action( 'admin_enqueue_scripts', 'moduleAdminLoad' );
 function modulePublicStyle() {
 	wp_register_style('stylesheet-css', PLUGIN_TWITTER_BASE_CSS . 'public.css');
 	wp_enqueue_style('stylesheet-css');	
-	
-	
+		
 }
 add_action( 'wp_enqueue_scripts', 'modulePublicStyle' );
 
@@ -213,7 +212,7 @@ function update_options_form()
 					<a class="accordion-section-title" href="#accordion-2">Shortcode</a>
 					 
 					<div id="accordion-2" class="accordion-section-content">
-						 <pre>[twitter]</pre>
+						 <pre>[dw-twitter-stream]</pre>
 						 <table class="table" width="100%">
 							<thead>
 								<tr>
@@ -236,9 +235,9 @@ function update_options_form()
 						
 						
 						<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-						<div class="twb-example">[twitter num="2"]</div>
+						<div class="twb-example">[dw-twitter-stream num="2"]</div>
 						
-						<pre>[twitter_card]</pre>
+						<pre>[dw-twitter-card]</pre>
 						 <table class="table" width="100%">
 							<thead>
 								<tr>
@@ -261,7 +260,7 @@ function update_options_form()
 						
 						
 						<div class="exampleHeader"><?php _e('Esempio:',"twitter-base"); ?></div>
-						<div class="twb-example">[twitter_card tweet="lorem ipsum"]</div>
+						<div class="twb-example">[dw-twitter-card tweet="lorem ipsum"]</div>
 				
 					</div><!--end .accordion-section-content-->
 				</div><!--end .accordion-section-->
