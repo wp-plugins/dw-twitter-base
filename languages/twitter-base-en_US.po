@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DW Twitter Base v0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-03-13 01:56+0100\n"
+"Last-Translator: admin <simo.marchese@hotmail.it>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ twitter-base
+#. translators: plugin header field 'Name'
+#: index.php:0
+msgid "DW Twitter Base"
+msgstr "DW Twitter Base"
+
+# @ twitter-base
+#. translators: plugin header field 'PluginURI'
+#. translators: plugin header field 'AuthorURI'
+#: index.php:0
+msgid "http://www.decadeweb.it"
+msgstr ""
+
+# @ twitter-base
+#. translators: plugin header field 'Description'
+#: index.php:0
+msgid "Twitter Base è un plugin che crea una completa integrazione tra il vostro blog WordPress e il vostro account Twitter."
+msgstr "Twitter Base is a plugin that creates a complete integration between your WordPress blog and your Twitter account ."
+
+# @ twitter-base
+#. translators: plugin header field 'Author'
+#: index.php:0
+msgid "Simone Marchese"
+msgstr "Simone Marchese"
+
+# @ twitter-base
+#. translators: plugin header field 'Version'
+#: index.php:0
+msgid "0.3"
+msgstr "0.3"
+
+# @ default
+#: index.php:184
+msgid "Save Changes"
+msgstr ""
+
+# @ twitter-base
+#: index.php:197
+msgid "Parametro"
+msgstr "Parameter"
+
+# @ twitter-base
+#: index.php:198
+msgid "Descrizione"
+msgstr "Description"
+
+# @ twitter-base
+#: index.php:199
+msgid "Valore"
+msgstr "Value"
+
+# @ twitter-base
+#: index.php:161
+msgid "Twitter Username"
+msgstr "Username Twitter"
+
+# @ twitter-base
+#: index.php:165
+msgid "Consumer Key"
+msgstr "Consumer Key"
+
+# @ twitter-base
+#: index.php:169
+msgid "Consumer Secret"
+msgstr "Consumer Secret"
+
+# @ twitter-base
+#: index.php:176
+msgid "Access Token"
+msgstr "Access Token"
+
+# @ twitter-base
+#: index.php:180
+msgid "Access Token Secret"
+msgstr "Access Token Secret"
+
+# @ twitter-base
+#: index.php:152
+msgid "Impostazioni"
+msgstr "Setting"
+
+# @ twitter-base
+#: index.php:122
+msgid ""
+"<p>Questo plugin è stato scritto basandosi sulla versione 1.1 di Twitter OAuth API.<br />\n"
+"\t\t\t\t\t\t\tCollegati all'indirizzo <a href='https://dev.twitter.com/apps' target='_blank'>https://dev.twitter.com/apps</a> e crea la propria applicazione, il sistema vi fornirà dei parametri univoci da utilizzare nel modulo sottostante.</p>"
+msgstr ""
+"<p>This plugin was written based on version 1.1 of Twitter OAuth API.<br />\n"
+"\\\t\\\t\\\t\\\t\\\t\\\t\\\tConnected at <a href='https://dev.twitter.com/apps' target='_blank'>https://dev.twitter.com/apps</a> and create your own application , the system will provide the unique parameters to be used in the form below.</p>"
+
+# @ twitter-base
+#: index.php:142
+msgid "Configurazione di Twitter Base"
+msgstr "Configuration Twitter Base"
+
+# @ twitter-base
+#: index.php:204
+msgid "username"
+msgstr "username"
+
+# @ twitter-base
+#: index.php:205
+msgid "username twitter, senza @"
+msgstr "twitter username without @"
+
+# @ twitter-base
+#: index.php:206
+msgid "configurazione"
+msgstr "configuration"
+
+# @ twitter-base
+#: index.php:209
+msgid "num"
+msgstr "num"
+
+# @ twitter-base
+#: index.php:210
+msgid "numero di twitter da visualizzare"
+msgstr "number of twitter to display"
+
+# @ twitter-base
+#: index.php:217
+msgid "Esempio:"
+msgstr "Example"
+
+# @ twitter-base
+#: index.php:144
+msgid "Questo plugin è stato scritto basandosi sulla versione 1.1 di Twitter OAuth API.<br />"
+msgstr "This plugin was written based on version 1.1 of Twitter OAuth API.<br />"
+
+# @ twitter-base
+#: index.php:145
+msgid "Collegati all'indirizzo <a href='https://dev.twitter.com/apps' target='_blank'>https://dev.twitter.com/apps</a> e crea la propria applicazione, il sistema vi fornirà dei parametri univoci da utilizzare nel modulo sottostante."
+msgstr "Connected at <a href='https://dev.twitter.com/apps' target='_blank'>https://dev.twitter.com/apps</a> and create your own application , the system will provide the unique parameters to be used in the form below."
