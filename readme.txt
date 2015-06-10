@@ -4,7 +4,7 @@ Tags: widget, shortcode, twitter, twitter widget, po, mo, plugin
 Requires at least: 4.0
 Version: 1.1.3
 Tested up to: 4.2.2
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Donate Link: https://www.paypal.com/it/cgi-bin/webscr?cmd=_flow&SESSION=FfdyoCSIyDh8HJtsvOst0okG1XEEatdcLG9qDVsuAdbwD1cV557LRBKu98u&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c
