@@ -8,8 +8,9 @@
  * Author URI: http://www.decadeweb.it
  * Text Domain: twitter-base
  * Domain Path: /languages/
- * Network: Optional. Whether the plugin can only be activated network wide. Example: true
- * License: GPLv3 or later
+ * Copyright: © 2015 Simone Marchese (email : simone.marchese@gmail.com)
+ * License: GNU General Public License v3.0
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  */
 
 if (!defined('ABSPATH')) die("Accesso diretto al file non permesso");
@@ -292,7 +293,8 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 		$name_product = $product->get_title();
 		$descr_product = get_the_excerpt();
 		if($descr_product == ""){ $descr_product = $name_product; }
-		$tag_product = strip_tags($product->get_tags());
+		
+		$qnt_product = $product->get_stock_quantity();
 		
 		// check is product page 
 		if(is_product()){
@@ -304,10 +306,10 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 			<meta name="twitter:title" content="'.$name_product.'">
 			<meta name="twitter:description" content="'.$descr_product.'" >
 			<meta name="twitter:image" content="'.$image_product.'">
-			<meta name="twitter:label1" content="'.$tag_product.'">
-			<meta name="twitter:data1" content="Tag">
-			<meta name="twitter:label2" content="'.$price_product.'">
-			<meta name="twitter:data2" content="Price">';
+			<meta name="twitter:label1" content="Price">
+			<meta name="twitter:data1" content="'.$price_product.'">
+			<meta name="twitter:label2" content="'.$qnt_product.'">
+			<meta name="twitter:data2" content="In stock">';
 		}
 	}
 }
