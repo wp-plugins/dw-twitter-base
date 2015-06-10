@@ -294,7 +294,6 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 		$descr_product = get_the_excerpt();
 		if($descr_product == ""){ $descr_product = $name_product; }
 		
-		$tag_product = strip_tags($product->get_tags());
 		
 		// check is product page 
 		if(is_product()){
@@ -306,10 +305,10 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 			<meta name="twitter:title" content="'.$name_product.'">
 			<meta name="twitter:description" content="'.$descr_product.'" >
 			<meta name="twitter:image" content="'.$image_product.'">
-			<meta name="twitter:label1" content="'.$tag_product.'">
-			<meta name="twitter:data1" content="Tag">
-			<meta name="twitter:label2" content="'.$price_product.'">
-			<meta name="twitter:data2" content="Price">';
+			<meta name="twitter:label2" content="Price">
+			<meta name="twitter:data2" content="'.$price_product.'">
+			<meta name="twitter:label1" content="'.$product->get_stock_quantity().'">
+			<meta name="twitter:data1" content="In stock">';
 		}
 	}
 }
