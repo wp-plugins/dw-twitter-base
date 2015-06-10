@@ -294,6 +294,7 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 		$descr_product = get_the_excerpt();
 		if($descr_product == ""){ $descr_product = $name_product; }
 		
+		$qnt_product = $product->get_stock_quantity();
 		
 		// check is product page 
 		if(is_product()){
@@ -307,7 +308,7 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 			<meta name="twitter:image" content="'.$image_product.'">
 			<meta name="twitter:label1" content="Price">
 			<meta name="twitter:data1" content="'.$price_product.'">
-			<meta name="twitter:label2" content="'.$product->get_stock_quantity().'">
+			<meta name="twitter:label2" content="'.$qnt_product.'">
 			<meta name="twitter:data2" content="In stock">';
 		}
 	}
