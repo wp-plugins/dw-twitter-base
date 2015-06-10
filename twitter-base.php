@@ -3,7 +3,7 @@
  * Plugin Name: DW Twitter Base
  * Plugin URI: http://decadeweb.it/italian/twitter-base.php
  * Description: Twitter Base è un plugin che crea una completa integrazione tra il vostro blog WordPress e il vostro account Twitter.
- * Version: 1.1.2
+ * Version: 1.1.3
  * Author: Simone Marchese
  * Author URI: http://www.decadeweb.it
  * Text Domain: twitter-base
@@ -274,4 +274,42 @@ function update_options_form()
     
 	<?php
 }
+
+
+
+// Check isset plugin woocommerce
+if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+	
+	// add meta tag woocommerce 
+	add_action('wp_head', 'moduleMetaProduct');
+	
+	function moduleMetaProduct(){
+		$product = new WC_Product( get_the_ID() );
+
+		// info product
+		$price_product = strip_tags($product->get_price_html());
+		$image_product = wp_get_attachment_url( get_post_thumbnail_id() );
+		$name_product = $product->get_title();
+		$descr_product = get_the_excerpt();
+		if($descr_product == ""){ $descr_product = $name_product; }
+		$tag_product = strip_tags($product->get_tags());
+		
+		// check is product page 
+		if(is_product()){
+			
+			// add meta tag in website
+			echo '<meta name="twitter:card" content="product">
+			<meta name="twitter:site" content="'.get_option('dw_twitteruser').'">
+			<meta name="twitter:creator" content="'.get_option('dw_twitteruser').'">
+			<meta name="twitter:title" content="'.$name_product.'">
+			<meta name="twitter:description" content="'.$descr_product.'" >
+			<meta name="twitter:image" content="'.$image_product.'">
+			<meta name="twitter:label1" content="'.$tag_product.'">
+			<meta name="twitter:data1" content="Tag">
+			<meta name="twitter:label2" content="'.$price_product.'">
+			<meta name="twitter:data2" content="Price">';
+		}
+	}
+}
+
 ?>
