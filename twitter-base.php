@@ -305,10 +305,10 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 			<meta name="twitter:title" content="'.$name_product.'">
 			<meta name="twitter:description" content="'.$descr_product.'" >
 			<meta name="twitter:image" content="'.$image_product.'">
-			<meta name="twitter:label2" content="Price">
-			<meta name="twitter:data2" content="'.$price_product.'">
-			<meta name="twitter:label1" content="'.$product->get_stock_quantity().'">
-			<meta name="twitter:data1" content="In stock">';
+			<meta name="twitter:label1" content="Price">
+			<meta name="twitter:data1" content="'.$price_product.'">
+			<meta name="twitter:label2" content="'.$product->get_stock_quantity().'">
+			<meta name="twitter:data2" content="In stock">';
 		}
 	}
 }
