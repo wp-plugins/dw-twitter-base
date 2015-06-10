@@ -8,7 +8,7 @@
  * Author URI: http://www.decadeweb.it
  * Text Domain: twitter-base
  * Domain Path: /languages/
- * Copyright: © 2015 Simone Marchese (email : info@decadeweb.it)
+ * Copyright: © 2015 Simone Marchese (email : simone.marchese@gmail.com)
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  */
