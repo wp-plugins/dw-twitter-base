@@ -2,8 +2,8 @@
 Contributors: simone marchese
 Tags: widget, shortcode, twitter, twitter widget, po, mo, plugin
 Requires at least: 4.0
-Version: 1.1.2
-Tested up to: 4.2.1
+Version: 1.1.3
+Tested up to: 4.2.2
 Stable tag: 1.1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -19,6 +19,8 @@ I created twitter base to allow the integration of Twitter with wordpress. Here 
 - Indicates the bees access and twitter username
 - Indicate the number of twitter to render
 - Use the shortcode to display the twitter posts and pages in your site
+
+**Twitter Base Card:** Meta box customize Twitter Cards experience
 
 **Twitter Base Widgets:** Displays the list of twitter by configuration set
 
@@ -73,6 +75,9 @@ access_token_secret : Access Token Secret
 4. Output Shortcode [dw-twitter-card tweet="Usa Twitter Base per moltiplicare le condivisioni dei tuoi tweet"]
 
 == Changelog ==
+
+= 1.1.3 =
+* Feature: Add Meta box customize Twitter Cards experience
 
 = 1.1.2 =
 * Fix: Rename Shorcode Plugin [dw-twitter-stream num = ""]
