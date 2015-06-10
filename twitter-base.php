@@ -292,7 +292,6 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 		$name_product = $product->get_title();
 		$descr_product = get_the_excerpt();
 		if($descr_product == ""){ $descr_product = $name_product; }
-		
 		$tag_product = strip_tags($product->get_tags());
 		
 		// check is product page 
