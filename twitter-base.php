@@ -8,8 +8,9 @@
  * Author URI: http://www.decadeweb.it
  * Text Domain: twitter-base
  * Domain Path: /languages/
- * Network: Optional. Whether the plugin can only be activated network wide. Example: true
- * License: GPLv3 or later
+ * Copyright: © 2015 Simone Marchese (email : info@decadeweb.it)
+ * License: GNU General Public License v3.0
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  */
 
 if (!defined('ABSPATH')) die("Accesso diretto al file non permesso");
@@ -292,6 +293,7 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 		$name_product = $product->get_title();
 		$descr_product = get_the_excerpt();
 		if($descr_product == ""){ $descr_product = $name_product; }
+		
 		$tag_product = strip_tags($product->get_tags());
 		
 		// check is product page 
