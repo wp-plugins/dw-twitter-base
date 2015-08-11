@@ -158,7 +158,7 @@ function update_options_form()
     	
     	<div id="icon-tools" class="icon32"></div>
     		
-	    	<h2><?php _e("Configurazione di Twitter Base","twitter-base"); ?></h2>
+	    	<h1><?php _e("Configurazione di Twitter Base","twitter-base"); ?></h1>
 	    	<br />
 			<?php _e("Questo plugin è stato scritto basandosi sulla versione 1.1 di Twitter OAuth API.<br />","twitter-base");
 				  _e("Collegati all'indirizzo <a href='https://dev.twitter.com/apps' target='_blank'>https://dev.twitter.com/apps</a> e crea la propria applicazione, il sistema vi fornirà dei parametri univoci da utilizzare nel modulo sottostante.","twitter-base"); 

@@ -4,7 +4,7 @@ Tags: widget, shortcode, twitter, twitter widget, po, mo, plugin
 Requires at least: 4.0
 Version: 1.1.3
 Tested up to: 4.2.2
-Stable tag: 1.1.3
+Stable tag: 4.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=WJUGLNDACR96C&lc=IT&item_name=Plugin%20Wordpress%20%2d%20Twitter%20Base&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
